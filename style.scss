@@ -1,0 +1,110 @@
+*{
+    margin:0;
+    padding:0px;
+    box-sizing: border-box;
+} 
+
+
+$fontcolor: hsl(257, 23%, 94%);
+$fontstyle: Arial;
+$fontsize:18px;
+$heaing-font-size: 22px;
+
+
+
+
+body{
+    background-color:#4B8E6A ;
+    font-family:$fontstyle; 
+    
+   
+p{
+        font-size: $fontsize;
+        color: rgb(239, 211, 169);
+    } 
+
+h3{
+    font-size: $heaing-font-size
+    }   
+
+}
+
+
+/*--- heading of the page ----*/
+
+header{
+    text-align: center;
+    margin-bottom: 50px;
+    color: rgb(239, 211, 169);
+    font-size: larger;
+    font-family:$fontstyle;
+    padding-top: 20px;
+}
+
+/*---- book image -----*/
+
+.book1{
+    
+    display:flex;
+    justify-content: space-around;
+    gap: 5rem;
+    margin: 20px 20px 20px 20px;
+    color:$fontcolor;   
+    width:103%;
+        
+}
+
+.book2{
+
+    display:flex;
+    justify-content: space-around;
+    gap: 5rem;
+    margin: 20px 20px 40px 20px ;
+    color:$fontcolor;  
+}
+
+.book3{
+
+    display:flex;
+    justify-content: space-around;
+    gap: 5rem;
+    margin: 20px 20px 40px 20px;
+    color:$fontcolor;
+    
+}
+
+
+/*----- button-----*/
+
+button{
+    display:flex;
+    padding:10px 10px 10px 10px;
+    border-radius: 10px;
+    border-color: transparent;
+    background-color: rgb(236, 220, 201);
+    margin-top: 20px;
+    
+}
+
+button:hover{
+    background-color: rgb(233, 135, 16);
+    
+}  
+
+/* -----a tag------ */
+
+a{
+    color: rgb(237, 228, 228);
+    text-decoration: none;
+}
+
+
+a:hover{
+    background-color: rgb(233, 135, 16);}
+
+
+
+@media (min-width:375px) {
+    
+}
+

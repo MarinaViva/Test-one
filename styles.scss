@@ -1,0 +1,63 @@
+$background-image-url: 'book.jpg';
+$nav-padding: 10px 20px;
+
+/* Styling för sidans kropp */
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+	background-image: url($background-image-url);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+/* Styling för navigationsfältet */
+.nav-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: $nav-padding;
+	/* Yttre utfyllnad för navigationsfältet */
+	color: white;
+
+	/* Styling för logotypen i navigationsfältet */
+	.logo img {
+		width: 80px;
+		height: 80px;
+		border-radius: 50%;
+	}
+
+	/* Styling för navigationslänkar */
+	.nav-links {
+		list-style: none;
+		display: flex;
+		gap: 50px;
+		/* Avstånd mellan navigationslänkarna */
+
+		/* Återställ standardmarginalen för listelementen i navigationslänkarna */
+		li {
+			margin: 0;
+		}
+
+		/* Styling för navigationslänkar */
+		a {
+			text-decoration: none;
+			color: white;
+		}
+	}
+
+	@media only screen and (max-width: 508px) {
+		padding: $nav-padding;
+	}
+}
+
+/* Styling för popup-fönstret */
+.popup {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(0, 0, 0, 0.8);
+	color: white;
+	padding: 20px;
+	border-radius: 10px;
+}
